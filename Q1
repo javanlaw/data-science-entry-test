@@ -1,0 +1,30 @@
+def swap(x, y):
+# Task 1    
+    """
+    - Swaps the values of x and y using only x and y.
+    - Returns -1 if x or y is not numeric.
+    - Prints the swapped values if both are numeric.
+    """
+    if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+        return -1
+    
+    # Swap using arithmetic operations
+    x = x + y
+    y = x - y
+    x = x - y
+    
+    print("Swapped values:", x, y)
+    return (x, y)
+
+# Task 2
+result1 = swap("Apple", 10) 
+print("Result 1:", result1)
+
+# Result 1 Output
+Result 1: -1
+
+result2 = swap(9, 17) 
+print("Result 2:", result2)
+
+# Result 2 Output
+Result 2: (17, 9)

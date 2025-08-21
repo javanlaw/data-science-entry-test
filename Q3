@@ -1,0 +1,23 @@
+def update_dictionary(dct, key, value):
+    """
+    - Updates the dictionary dct with a new key-value pair.
+    - If key already exists, prints the original value before updating.
+    - Returns the updated dictionary.
+    """
+    if key in dct:
+        print("Original value:", dct[key])
+    dct[key] = value
+    return dct
+
+# Scenario 1
+
+result1 = update_dictionary({}, "name", "Alice")
+print("Result 1:", result1)  
+
+# Scenario 1 Output: {'name': 'Alice'}
+
+# Scenario 2
+result2 = update_dictionary({"age": 25}, "age", 26)
+print("Result 2:", result2)  
+
+# Scenario 2 Output: Original value: 25, then {'age': 26}

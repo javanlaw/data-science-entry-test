@@ -10,7 +10,6 @@ def swap(x, y):
         return -1
     x, y = y, x
     print(x, y)
-    return x, y
 
 # Task 2
 result1 = swap("Apple", 10) 

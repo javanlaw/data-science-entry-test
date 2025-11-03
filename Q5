@@ -5,9 +5,7 @@ def check_divisibility(num, divisor):
     - Returns True if divisible, False otherwise.
     """
     if not (isinstance(num, (int, float)) and isinstance(divisor, (int, float))):
-        return False  # or raise error as divisor or num not numeric
-    if divisor == 0:
-        return False  # division by zero not allowed
+        return False
     return num % divisor == 0
 
 # Scenario 1
